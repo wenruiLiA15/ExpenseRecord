@@ -26,7 +26,9 @@ namespace ExpenseRecord.ExpenseListService
 
         public Task DeleteAsync(string id)
         {
-            throw new NotImplementedException();
+            var index = FullList.Find(x => x.Id == id);
+            FullList.Remove(index);
+            return Task.CompletedTask;
         }
 
         public Task<ExpenseRecordDto> GetByName(string Name)

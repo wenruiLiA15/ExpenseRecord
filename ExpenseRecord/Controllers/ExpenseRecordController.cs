@@ -35,10 +35,8 @@ namespace ExpenseRecord.Controllers
         [HttpDelete(@"{Id}")]
         public void DeleteRecord([FromRoute] string id)
         {
-           
-            throw new NotImplementedException();
-            //_expenseRecordService.Gets();
-            //List<ExpenseRecordDto> expenseRecordDtos = _expenseRecordService.data;
+            _expenseRecordService.DeleteAsync(id);
+          
             
         }
 
