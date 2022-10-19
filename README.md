@@ -6,27 +6,27 @@ It’s used to record daily expenses, and do query, and deletion operations.
 The expense record includes the following information: description, type, amount, date
 For example: lunch, meal, 50, 20221010
 
-AC1: 
+AC1: // Gets
 GIVEN there is no expense data, 
 WHEN user visits page, 
 THEN the page does not show any expense data.
 
-AC2: 
+AC2: // create Aysnc
 GIVEN page without any data, 
 WHEN user types expense information and clicks add button, 
 THEN the page shows the newly added expense data.
 
-AC3: 
+AC3: // Gets
 GIVEN page with some data, 
 WHEN user visits page, 
 THEN the page shows all expense data.
 
-AC4: 
+AC4: // create Aysnc
 GIVEN page with some data, 
 WHEN user types expense information and clicks add button, 
 THEN the page shows the newly added expense data on the top.
 
-AC5: 
+AC5: // delete Async
 GIVEN page with some data, 
 WHEN user clicks delete button next to expense, 
 THEN the page no longer shows the deleted expense.
