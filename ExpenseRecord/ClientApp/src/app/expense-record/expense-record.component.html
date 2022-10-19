@@ -1,9 +1,11 @@
 <div class="list">
     <ng-container *ngFor="let item of displayList ">
-      <div (click)="navToItem(item)" class="item">
-        <input (click)="$event.stopPropagation()" (ngModelChange)="toggleItemDone(item)" [ngModel]="item.done"
-          type="checkbox">
-        <span class="item-desc">{{item.description}}</span>
+      <div class="item">
+        
+        <span >{{item.Description}}   </span>
+        <span >{{item.Type}}   </span>
+        <span >{{item.Price}}   </span>
+        <button> Delete</button>
       </div>
     </ng-container>
 </div>
